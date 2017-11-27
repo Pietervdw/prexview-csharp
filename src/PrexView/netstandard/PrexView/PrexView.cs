@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace PrexView.Core
+namespace PrexView
 {
-	public class PrexView
+    public class PrexView
 	{
 		private readonly string _apiKey;
 
@@ -15,7 +14,7 @@ namespace PrexView.Core
 			_apiKey = apiKey;
 		}
 
-		public async Task<byte[]>Transform(PrexViewFormat format,string data, string design, PrexViewOutput output)
+		public async Task<byte[]> Transform(Enums.PrexViewFormat format, string data, string design, Enums.PrexViewOutput output)
 		{
 			var postContent = new FormUrlEncodedContent(new[]
 			{
@@ -34,14 +33,5 @@ namespace PrexView.Core
 			var file = await response.Content.ReadAsByteArrayAsync();
 			return file;
 		}
-
-
-		private HttpClient CreateHttpClient()
-		{
-			var httpClient = new HttpClient();
-			httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-			return httpClient;
-		}
-
 	}
 }

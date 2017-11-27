@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.1</TargetFramework>
+	  <PackageId>PrexView.PietervanderWesthuizen</PackageId>
+	  <PackageVersion>1.0.0</PackageVersion>
+	  <Authors>Pieter van der Westhuizen</Authors>
+	  <Description>.NET Wrapper for PrexView API.https://prexview.com </Description>
+	  <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+	  <PackageReleaseNotes>First release</PackageReleaseNotes>
+	  <Copyright>Copyright 2017 (c) Pieter van der Westhuizen. All rights reserved.</Copyright>
+	  <PackageTags>document creation xml json wrapper</PackageTags>
+  </PropertyGroup>
+
+</Project>
