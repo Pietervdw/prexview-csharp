@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.1</TargetFramework>
-	  <PackageId>PrexView.PietervanderWesthuizen</PackageId>
+	  <PackageId>PrexView.NetStandard</PackageId>
 	  <PackageVersion>1.0.0</PackageVersion>
 	  <Authors>Pieter van der Westhuizen</Authors>
 	  <Description>.NET Wrapper for PrexView API.https://prexview.com </Description>
