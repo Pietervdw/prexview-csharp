@@ -1,5 +1,5 @@
 1. Sign up for an account at https://prexview.com/
-2. Install the library via Nuget.
+2. Download the library.
 3. Create your design on Prexview
 4. Use the library like this:
 
